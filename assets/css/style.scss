@@ -215,6 +215,8 @@ table {
 }
 
 th, td {
+  background-color: var(--vscode-bg-secondary) !important;
+
   padding: 0.75rem !important;
   text-align: left !important;
   border-bottom: 1px solid var(--vscode-border) !important;
