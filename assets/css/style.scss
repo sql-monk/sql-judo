@@ -11,13 +11,14 @@
   --vscode-text: #d4d4d4;
   --vscode-text-muted: #969696;
   --vscode-blue: #569cd6;
-  --vscode-green: #6a9955;
-  --vscode-orange: #ce9178;
+  --vscode-green: #94cea8;
+  --vscode-orange: #ce915e;
   --vscode-red: #f44747;
   --vscode-purple: #c586c0;
   --vscode-yellow: #dcdcaa;
   --vscode-border: #464647;
   --vscode-selection: #264f78;
+  --vscode-comment: #6a9942;
 }
 
 /* Full width layout like VS Code */
@@ -177,7 +178,7 @@ code {
   color: var(--vscode-yellow) !important; /* Functions */
 }
 
-.language-sql .o {
+.language-sql .o, .language-sql .p, .language-sql .n {
   color: var(--vscode-text) !important; /* Operators */
 }
 
