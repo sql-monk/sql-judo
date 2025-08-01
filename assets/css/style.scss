@@ -210,8 +210,8 @@ table {
   width: 100% !important;
   border-collapse: collapse !important;
   margin: 1.5rem 0 !important;
-  background-color: var(--vscode-bg-secondary) !important;
-  border: 1px solid var(--vscode-border) !important;
+  // background-color: var(--vscode-bg-secondary) !important;
+  // border: 1px solid var(--vscode-border) !important;
 }
 
 th, td {
@@ -219,7 +219,7 @@ th, td {
 
   padding: 0.75rem !important;
   text-align: left !important;
-  border-bottom: 1px solid var(--vscode-border) !important;
+  border: 1px solid var(--vscode-border) !important;
   color: var(--vscode-text) !important;
 }
 
