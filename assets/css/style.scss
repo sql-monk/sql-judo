@@ -3,282 +3,288 @@
 
 @import "{{ site.theme }}";
 
-/* Microsoft Learn Dark Theme Style */
+/* VS Code Dark Theme Style */
 :root {
-  --ms-bg-primary: #1e1e1e;
-  --ms-bg-secondary: #252526;
-  --ms-bg-tertiary: #2d2d30;
-  --ms-text-primary: #ffffff;
-  --ms-text-secondary: #cccccc;
-  --ms-text-muted: #969696;
-  --ms-accent-blue: #0078d4;
-  --ms-accent-blue-hover: #106ebe;
-  --ms-border: #3c3c3c;
-  --ms-border-light: #484848;
-  --ms-success: #00bcf2;
-  --ms-warning: #ffb900;
-  --ms-shadow: rgba(0, 0, 0, 0.2);
+  --vscode-bg: #1e1e1e;
+  --vscode-bg-secondary: #2d2d30;
+  --vscode-bg-tertiary: #3c3c3c;
+  --vscode-text: #d4d4d4;
+  --vscode-text-muted: #969696;
+  --vscode-blue: #569cd6;
+  --vscode-green: #6a9955;
+  --vscode-orange: #ce9178;
+  --vscode-red: #f44747;
+  --vscode-purple: #c586c0;
+  --vscode-yellow: #dcdcaa;
+  --vscode-border: #464647;
+  --vscode-selection: #264f78;
 }
 
-/* Base styling */
+/* Full width layout like VS Code */
 body {
-  background-color: var(--ms-bg-primary) !important;
-  color: var(--ms-text-primary) !important;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif !important;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  background-color: var(--vscode-bg) !important;
+  color: var(--vscode-text) !important;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', 'Monaco', monospace !important;
+  line-height: 1.5;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .site-header {
-  background-color: var(--ms-bg-secondary) !important;
-  border-bottom: 1px solid var(--ms-border) !important;
-  padding: 1rem 0;
+  background-color: var(--vscode-bg-secondary) !important;
+  border-bottom: 1px solid var(--vscode-border) !important;
+  padding: 0.5rem 0 !important;
 }
 
-.site-title {
-  color: var(--ms-text-primary) !important;
-  font-weight: 600 !important;
-  font-size: 1.5rem !important;
-  text-decoration: none !important;
-}
-
-.site-title:hover {
-  color: var(--ms-accent-blue) !important;
-}
-
-/* Main content container */
 .wrapper {
-  max-width: 1200px !important;
-  margin: 0 auto !important;
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
   padding: 0 2rem !important;
-  background-color: var(--ms-bg-primary) !important;
+  background-color: var(--vscode-bg) !important;
 }
 
 .page-content {
-  background-color: var(--ms-bg-primary) !important;
-  padding: 3rem 0 !important;
+  background-color: var(--vscode-bg) !important;
+  padding: 2rem 0 !important;
+  width: 100% !important;
 }
 
-/* Headers - Microsoft Learn style */
+.site-title {
+  color: var(--vscode-text) !important;
+  font-weight: 400 !important;
+  font-size: 1.2rem !important;
+}
+
+.site-title:hover {
+  color: var(--vscode-blue) !important;
+}
+
+/* Headers with VS Code styling */
 h1 {
-  color: var(--ms-text-primary) !important;
-  font-size: 2.5rem !important;
-  font-weight: 600 !important;
+  color: var(--vscode-text) !important;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
   margin: 0 0 2rem 0 !important;
-  padding-bottom: 1rem !important;
-  border-bottom: 2px solid var(--ms-accent-blue) !important;
-  text-align: left !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid var(--vscode-border) !important;
 }
 
 h2 {
-  color: var(--ms-text-primary) !important;
-  font-size: 1.8rem !important;
-  font-weight: 600 !important;
-  margin: 2.5rem 0 1rem 0 !important;
-  padding-bottom: 0.5rem !important;
-  border-bottom: 1px solid var(--ms-border) !important;
-}
-
-h3, h4, h5, h6 {
-  color: var(--ms-text-primary) !important;
-  font-weight: 600 !important;
+  color: var(--vscode-blue) !important;
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
   margin: 2rem 0 1rem 0 !important;
 }
 
-/* Navigation cards - Microsoft Learn style */
+h3, h4, h5, h6 {
+  color: var(--vscode-yellow) !important;
+  font-weight: 400 !important;
+  margin: 1.5rem 0 0.5rem 0 !important;
+}
+
+/* Navigation list - VS Code sidebar style */
 ul {
   list-style: none !important;
   padding: 0 !important;
-  margin: 2rem 0 !important;
+  margin: 1rem 0 !important;
 }
 
 li {
-  background-color: var(--ms-bg-secondary) !important;
-  border: 1px solid var(--ms-border) !important;
-  border-radius: 8px !important;
-  margin: 1rem 0 !important;
-  padding: 0 !important;
-  transition: all 0.2s ease !important;
-  box-shadow: 0 2px 4px var(--ms-shadow) !important;
+  background-color: var(--vscode-bg-secondary) !important;
+  border: 1px solid var(--vscode-border) !important;
+  margin: 0.5rem 0 !important;
+  transition: all 0.15s ease !important;
+  border-radius: 0 !important;
 }
 
 li:hover {
-  background-color: var(--ms-bg-tertiary) !important;
-  border-color: var(--ms-accent-blue) !important;
-  box-shadow: 0 4px 8px var(--ms-shadow) !important;
-  transform: translateY(-2px) !important;
+  background-color: var(--vscode-bg-tertiary) !important;
+  border-color: var(--vscode-blue) !important;
 }
 
 li a {
   display: block !important;
-  padding: 1.5rem !important;
-  color: var(--ms-text-primary) !important;
+  padding: 1rem 1.5rem !important;
+  color: var(--vscode-text) !important;
   text-decoration: none !important;
-  font-size: 1.1rem !important;
-  font-weight: 500 !important;
-  border-left: 4px solid var(--ms-accent-blue) !important;
-  border-radius: 8px !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  border-left: 3px solid transparent !important;
 }
 
-li a:hover {
-  color: var(--ms-accent-blue) !important;
+li:hover a {
+  color: var(--vscode-blue) !important;
+  border-left-color: var(--vscode-blue) !important;
 }
 
 /* Links */
 a {
-  color: var(--ms-accent-blue) !important;
+  color: var(--vscode-blue) !important;
   text-decoration: none !important;
 }
 
 a:hover {
-  color: var(--ms-accent-blue-hover) !important;
+  color: var(--vscode-orange) !important;
   text-decoration: underline !important;
 }
 
-/* Code blocks - Microsoft Learn style */
+/* Code blocks - VS Code syntax highlighting */
 pre, code {
-  background-color: #1e1e1e !important;
-  border: 1px solid var(--ms-border) !important;
-  border-radius: 4px !important;
-  font-family: 'Cascadia Code', 'Fira Code', 'Monaco', 'Menlo', monospace !important;
+  background-color: #0d1117 !important;
+  border: 1px solid var(--vscode-border) !important;
+  border-radius: 3px !important;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', 'Monaco', monospace !important;
+  color: var(--vscode-text) !important;
 }
 
 pre {
-  padding: 1.5rem !important;
+  padding: 1rem !important;
   overflow-x: auto !important;
-  margin: 1.5rem 0 !important;
-  background-color: #0d1117 !important;
+  margin: 1rem 0 !important;
+  line-height: 1.4 !important;
 }
 
 code {
-  padding: 0.25rem 0.5rem !important;
+  padding: 0.2rem 0.4rem !important;
   font-size: 0.9em !important;
-  color: #79c0ff !important;
+  color: var(--vscode-orange) !important;
 }
 
-/* Blockquotes - Microsoft Learn style */
+/* SQL syntax highlighting */
+.language-sql .k, .language-sql .kc, .language-sql .kd, .language-sql .kn, .language-sql .kp, .language-sql .kr, .language-sql .kt {
+  color: var(--vscode-blue) !important; /* Keywords */
+}
+
+.language-sql .s, .language-sql .s1, .language-sql .s2 {
+  color: var(--vscode-orange) !important; /* Strings */
+}
+
+.language-sql .m, .language-sql .mf, .language-sql .mh, .language-sql .mi, .language-sql .mo {
+  color: var(--vscode-green) !important; /* Numbers */
+}
+
+.language-sql .c, .language-sql .c1, .language-sql .cm {
+  color: var(--vscode-green) !important; /* Comments */
+  font-style: italic !important;
+}
+
+.language-sql .nf {
+  color: var(--vscode-yellow) !important; /* Functions */
+}
+
+.language-sql .o {
+  color: var(--vscode-text) !important; /* Operators */
+}
+
+/* Blockquotes - VS Code comment style */
 blockquote {
-  background-color: var(--ms-bg-secondary) !important;
-  border-left: 4px solid var(--ms-accent-blue) !important;
-  color: var(--ms-text-secondary) !important;
-  padding: 1.5rem !important;
-  margin: 2rem 0 !important;
-  border-radius: 0 8px 8px 0 !important;
-  font-style: normal !important;
-  position: relative !important;
-}
-
-blockquote::before {
-  content: "💡" !important;
-  position: absolute !important;
-  top: 1rem !important;
-  left: -0.5rem !important;
-  background-color: var(--ms-accent-blue) !important;
-  color: white !important;
-  border-radius: 50% !important;
-  width: 2rem !important;
-  height: 2rem !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 1rem !important;
+  background-color: var(--vscode-bg-secondary) !important;
+  border-left: 4px solid var(--vscode-green) !important;
+  color: var(--vscode-green) !important;
+  padding: 1rem !important;
+  margin: 1.5rem 0 !important;
+  font-style: italic !important;
+  border-radius: 0 3px 3px 0 !important;
 }
 
 /* Images */
 img {
   max-width: 100% !important;
   height: auto !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 8px var(--ms-shadow) !important;
-  margin: 2rem auto !important;
+  border: 1px solid var(--vscode-border) !important;
+  border-radius: 3px !important;
+  margin: 1.5rem 0 !important;
   display: block !important;
-  border: 1px solid var(--ms-border) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-/* Tables - Microsoft Learn style */
+/* Tables - VS Code style */
 table {
   width: 100% !important;
   border-collapse: collapse !important;
-  margin: 2rem 0 !important;
-  background-color: var(--ms-bg-secondary) !important;
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  box-shadow: 0 2px 4px var(--ms-shadow) !important;
+  margin: 1.5rem 0 !important;
+  background-color: var(--vscode-bg-secondary) !important;
+  border: 1px solid var(--vscode-border) !important;
 }
 
 th, td {
-  padding: 1rem !important;
+  padding: 0.75rem !important;
   text-align: left !important;
-  border-bottom: 1px solid var(--ms-border) !important;
-  color: var(--ms-text-primary) !important;
+  border-bottom: 1px solid var(--vscode-border) !important;
+  color: var(--vscode-text) !important;
 }
 
 th {
-  background-color: var(--ms-bg-tertiary) !important;
+  background-color: var(--vscode-bg-tertiary) !important;
   font-weight: 600 !important;
-  color: var(--ms-accent-blue) !important;
+  color: var(--vscode-blue) !important;
 }
 
-tbody tr:hover {
-  background-color: var(--ms-bg-tertiary) !important;
+tr:hover {
+  background-color: var(--vscode-selection) !important;
 }
 
 /* Footer */
 .site-footer {
-  background-color: var(--ms-bg-secondary) !important;
-  border-top: 1px solid var(--ms-border) !important;
-  color: var(--ms-text-muted) !important;
-  padding: 2rem 0 !important;
-  margin-top: 4rem !important;
+  background-color: var(--vscode-bg-secondary) !important;
+  border-top: 1px solid var(--vscode-border) !important;
+  color: var(--vscode-text-muted) !important;
+  padding: 1.5rem 0 !important;
+  margin-top: 3rem !important;
 }
 
-/* Scrollbar styling */
+/* VS Code scrollbar */
 ::-webkit-scrollbar {
-  width: 12px !important;
+  width: 14px !important;
+  height: 14px !important;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--ms-bg-primary) !important;
+  background: var(--vscode-bg) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--ms-border-light) !important;
-  border-radius: 6px !important;
+  background: var(--vscode-bg-tertiary) !important;
+  border-radius: 0 !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ms-accent-blue) !important;
+  background: var(--vscode-border) !important;
 }
 
-/* Responsive design */
+::-webkit-scrollbar-corner {
+  background: var(--vscode-bg) !important;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--vscode-selection) !important;
+  color: var(--vscode-text) !important;
+}
+
+/* Responsive - maintain full width */
 @media screen and (max-width: 768px) {
   .wrapper {
     padding: 0 1rem !important;
   }
   
   .page-content {
-    padding: 2rem 0 !important;
+    padding: 1.5rem 0 !important;
   }
   
   h1 {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
   }
   
   li a {
-    padding: 1rem !important;
-    font-size: 1rem !important;
+    padding: 0.75rem 1rem !important;
   }
 }
 
-/* Focus states for accessibility */
+/* Focus states */
 a:focus, button:focus {
-  outline: 2px solid var(--ms-accent-blue) !important;
+  outline: 1px solid var(--vscode-blue) !important;
   outline-offset: 2px !important;
-}
-
-/* Selection styling */
-::selection {
-  background-color: var(--ms-accent-blue) !important;
-  color: white !important;
 }
