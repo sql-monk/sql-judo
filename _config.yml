@@ -1,10 +1,10 @@
 title: "SQL Judo"
 description: "Гнучкий шлях до написання швидких і елегантних запитів"
 baseurl: "/sql-judo"
-url: "https://sql-monk.github.io"
+url: "https://github.com/sql-monk"
 
 # Theme
-remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: pages-themes/slate@v0.2.0
 
 # Plugins
 plugins:
