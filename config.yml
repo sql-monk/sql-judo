@@ -12,8 +12,7 @@ url: "https://github.com/sql-monk"
 #  - jekyll-feed
 #  - jekyll-sitemap
 
-# Markdown
-# markdown: kramdown
+markdown: kramdown
 # highlighter: rouge
 # kramdown:
 #  input: GFM
