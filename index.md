@@ -9,4 +9,3 @@
 - [Плин часу](#notimplemented) — Про роботу з датами, `CAST` і `CONVERT`
 - [Груповий поєдинок](#notimplemented) — Про `GROUP BY`, `HAVING` та віконні функцій
 - [Баланс стійкості](#notimplemented) — Про індекси та їх розміри
-- [Погляд усередину](#notimplemented) — Про **Execution Plan** та його аналіз
