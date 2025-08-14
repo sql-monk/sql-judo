@@ -5,7 +5,7 @@
 - [Підступність тимчасового](1.%20SQL%20Judo.%20підступність%20тимчасового) — Про `SELECT INTO`
 - [Мистецтво тимчасового](2.%20SQL%20Judo.%20мистецтво%20тимчасового) — Про тимчасові таблиці (`#table`) і табличні змінні (`@table`)
 - [Чистий розум](3.%20SQL%20Judo.%20чистий%20розум) — Про фільтрацію даних (`WHERE`)
-- [Єдність різного](#notimplemented) — Про об'єднання даних (`JOIN` та `UNION`)
-- [Плин часу](#notimplemented) — Про роботу з датами, `CAST` і `CONVERT`
-- [Груповий поєдинок](#notimplemented) — Про `GROUP BY`, `HAVING` та віконні функцій
-- [Баланс стійкості](#notimplemented) — Про індекси та їх розміри
+- [Єдність різного](#notimplemented) — not implemented
+- [Плин часу](#notimplemented) — not implemented
+- [Хореографія єдності](#notimplemented) — not implemented
+- [Баланс стійкості](#notimplemented) — not implemented
